@@ -5,11 +5,18 @@
 <p id="demo"></p>
 <p id="demo2"></p>
 <script>
+     var width = window.innerWidth
+|| document.documentElement.clientWidth
+|| document.body.clientWidth;
+
+var height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
 document.getElementById("demo").innerHTML = 
-"Screen width is " + window.innerWidth;
+"Screen width is " + width;
 
 document.getElementById("demo2").innerHTML = 
-"Screen height is " + window.innerHeight;
+"Screen height is " + height;
 </script>
      
 </body>
